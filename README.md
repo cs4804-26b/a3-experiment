@@ -19,7 +19,7 @@ You should definitely *reference* demo programs from books or the web, and if yo
 Going Beyond Cleveland-McGill
 ---
 
-Several have expressed interest in conducting surveys of various sorts. I encourage you go move beyond Cleveland and McGill if you can think of other interesting visualization experiment designs and corresponding analyses. 
+Several have expressed interest in conducting surveys of various sorts. I encourage you to move beyond Cleveland and McGill if you can think of other interesting visualization experiment designs and corresponding analyses. 
 
 You might study how people interpret COVID visualizations or design an experiment on shapes or color, for example.
 If you decide to go in a custom route, do plan to sync with staff so we can help you set acceptable parameters that would be fair to folks following the original route.
@@ -31,7 +31,7 @@ How you measure "error" and similar facets also matter. But you can't go wrong w
 Requirements
 ---
 
-- Look it over Cleveland and McGill's original experiment (see the section below) and [watch this video](https://www.loom.com/share/636660b72d00436a8ae910f91d67a0c7) to get a sense of the experiment structure and where your visualizations will go.
+- Look over Cleveland and McGill's original experiment (see the section below) and [watch this video](https://www.loom.com/share/636660b72d00436a8ae910f91d67a0c7) to get a sense of the experiment structure and where your visualizations will go.
 - When viewing the example experiment video, note the following:
     - Trials are in random order.  
     - Each trial has a randomly generated set of 5-10 data points.  
@@ -59,11 +59,11 @@ Requirements
 
 ## General Requirements
 
-0. Your code should be forked from the GitHub repo and linked using GitHub pages.
-2. Your project should use d3 to build visualizations. 
+1. Your code should be forked from the GitHub repo and published with GitHub Pages.
+2. Your project should use d3 to build visualizations.
 3. Your writeup (readme.md in the repo) should contain the following:
 
-- Working link to the experiment hosted on gh-pages or some other site.
+- Working link to the experiment hosted on GitHub Pages or some other site.
 - Concise description and screenshot of your experiment.
 - Description of the technical achievements you attempted with this project.
 - Description of the design achievements you attempted with this project.
@@ -72,7 +72,8 @@ Background
 ---
 
 In 1984, William Cleveland and Robert McGill published the results of several controlled experiments that pitted bar charts against pies and stacked-bar variants. 
-Their paper (http://www.cs.ubc.ca/~tmm/courses/cpsc533c-04-spr/readings/cleveland.pdf) (http://info.slis.indiana.edu/~katy/S637-S11/cleveland84.pdf) is considered a key paper in data visualization.
+Their paper, [Graphical Perception: Theory, Experimentation, and Application to the Development of Graphical Methods](https://doi.org/10.1080/01621459.1984.10478080) (Journal of the American Statistical Association, 1984), is considered a key paper in data visualization.
+Heer and Bostock replicated it online in 2010: [Crowdsourcing Graphical Perception](https://doi.org/10.1145/1753326.1753357) (CHI 2010).
 In particular, they ran a psychology-style experiment where users were shown a series of randomly-generated charts with two graphical elements marked like this:
 
 ![cleveland bar chart](img/cleveland-bar.png)
@@ -93,19 +94,19 @@ You’ll be implementing this error score as part of the lab.
 (Hint: it’s not a trick question, this is just to familiarize you with the experiment protocol). 
 With this Cleveland-McGill error score you can better compare the performance of the charts you test to figure out which one performs the best.
 
-As a baseline, compare your average Error scores to the following chart, which include both Cleveland and McGill’s results as well as more recent extensions of this experiment (lower error indicates better performance, and error bars are bootstrapped 95% confidence intervals (`http://en.wikipedia.org/wiki/Confidence_interval#Meaning_and_interpretation`)):
+As a baseline, compare your average Error scores to the following chart, which include both Cleveland and McGill’s results as well as more recent extensions of this experiment (lower error indicates better performance, and error bars are bootstrapped [95% confidence intervals](https://en.wikipedia.org/wiki/Confidence_interval)):
 
 ![cleveland results](img/cleveland-results.png)
 
 GitHub Details
 ---
 
-- Fork the GitHub Repository. You now have a copy associated with your username.
-- Make changes to index.html to fulfill the project requirements. 
-- Make sure your "master" branch matches your "gh-pages" branch. See the GitHub Guides referenced above if you need help.
-- Edit this README.md with a link to your gh-pages site: e.g. http://YourUsernameGoesHere.github.io/Experiment/index.html
+- [Fork the GitHub repository](https://docs.github.com/en/pull-requests/how-tos/work-with-forks/fork-a-repo). You now have a copy associated with your username.
+- Make changes to index.html to fulfill the project requirements.
+- Turn on GitHub Pages for your fork and publish from the `main` branch (Settings → Pages; see [configuring a publishing source](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)).
+- Edit this README.md with a link to your GitHub Pages site, e.g. https://YourUsernameGoesHere.github.io/a3-experiment/
 - Replace this file (README.md) with your writeup and Design/Technical achievements.
-- To submit, make a [Pull Request](https://help.github.com/articles/using-pull-requests/) on the original repository.
+- To submit, make a [pull request from your fork](https://docs.github.com/en/pull-requests/how-tos/create-pull-requests/creating-a-pull-request-from-a-fork) on the original repository.
 - Name your submission using the following scheme: 
 ```
 a3-FirstLastnameMember1-FirstLastnameMember2-FirstLastnameMember3-...
