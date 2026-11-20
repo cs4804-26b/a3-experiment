@@ -6,6 +6,7 @@ export default function drawNeedles(left, right) {
 }
 
 function drawNeedle(percentage) {
+    percentage = 100 - percentage; //percentage of democrat chance not republican
     const width = 400;
     const height = 300;
     // Percentage = X (0-100), converted to decimals, then subtract 50% since needle starts at 50%
@@ -45,7 +46,8 @@ function drawNeedle(percentage) {
 
     const svg = d3.create("svg")
         .attr("width", width)
-        .attr("height", height);
+        .attr("height", height)
+        .attr("class", "chart");
 
     const needle = d3.path();
     needle.moveTo(point0.x, point0.y);
